@@ -1,59 +1,140 @@
-# iFogSim2 (The New Version)
-A Toolkit for Modeling and Simulation of Resource Management Techniques in Internet of Things, Edge and Fog Computing Environments with the following new features:
- * Mobility-support and Migration Management
-   * Supporting real mobility datasets
-   * Implementing different random mobility models 
- * Microservice Orchestration
- * Dynamic Distributed Clustering
- * Any Combinations of Above-mentioned Features
- * Full Compatibility with the Latest Version of the CloudSim (i.e., [CloudSim 5](https://github.com/Cloudslab/cloudsim/releases)) and [Previous iFogSim Version](https://github.com/Cloudslab/iFogSim1) and Tutorials
+# 🚀 iFogSim2 Project – IoT & Edge Computing Simulation
 
-iFogSim2 currently encompasses several new usecases such as:
- * Audio Translation Scenario
- * Healthcare Scenario
- * Crowd-sensing Scenario
+**Author:** Abdelhakim Berrim
 
-# Cite IFogSim2
+---
+
+## 📌 Project Overview
+
+This project focuses on simulating **IoT and Edge Computing environments** using **iFogSim2**, بهدف تحليل أداء الأنظمة الحديثة وتقليل التأخير (Latency) وتحسين استهلاك الشبكة.
+
+The work is divided into two main parts:
+
+* 📊 **Task 2:** IoT Environment Simulation
+* ⚡ **Task 3:** Edge Computing Optimization
+
+---
+
+## 🎯 Objectives
+
+* Simulate real-world IoT data flow
+* Analyze network usage and latency
+* Compare cloud vs edge processing
+* Optimize application placement for better performance
+
+---
+
+## 🧠 Technologies Used
+
+* Java
+* iFogSim2
+* CloudSim
+* IntelliJ IDEA
+
+---
+
+## 📂 Project Structure
+
 ```
-@article{mahmud2021ifogsim2,
-  title={IFogSim2: An Extended iFogSim Simulator for Mobility, Clustering, and Microservice Management in Edge and Fog Computing Environments},
-  author={Mahmud, Redowan and Pallewatta, Samodha and Goudarzi, Mohammad and Buyya, Rajkumar},
-  journal={arXiv preprint arXiv:2109.05636},
-  year={2021}
-}
+src/
+ ├── org.fog.application
+ ├── org.fog.entities
+ ├── org.fog.placement
+ ├── org.fog.scheduler
+ ├── org.fog.utils
+ └── org.cloudbus.cloudsim
 ```
 
-# How to run iFogSim2 ?
-* Eclipse IDE:
-  * Create a Java project
-  * Inside the project directory, initialize an empty Git repository with the following command:
-  ```
-  git init
-  ```
-  * Add the Git repository of iFogSim2 as the `origin` remote:
-  ```
-  git remote add origin https://github.com/Cloudslab/iFogSim
-  ```
-  * Pull the contents of the repository to your machine:
-  ```
-  git pull origin main
-  ```
-  * Include the JARs to your project  
-  * Run the example files (e.g. TranslationServiceFog_Clustering.java, CrowdSensing_Microservices_RandomMobility_Clustering.java) to get started
+---
 
-* IntelliJ IDEA:
-  * Clone the iFogSim2 Git repository to desired folder:
-  ```
-  git clone https://github.com/Cloudslab/iFogSim
-  ```
-  * Select "project from existing resources" from the "File" drop-down menu
-  * Verify the Java version
-  * Verify the external libraries in the "JARs" Folder are added to the project
-  * Run the example files (e.g. TranslationServiceFog_Clustering.java, CrowdSensing_Microservices_RandomMobility_Clustering.java) to get started
+# 📊 Task 2 – IoT Environment Simulation
 
+## 📝 Description
 
-# References
- * (Latest Version) Redowan Mahmud, Samodha Pallewatta , Mohammad Goudarzi, and Rajkumar Buyya, <A href="https://arxiv.org/abs/2109.05636">iFogSim2: An Extended iFogSim Simulator for Mobility, Clustering, and Microservice Management in Edge and Fog Computing Environments</A>, September 2021. (Latest Version)
- * Harshit Gupta, Amir Vahid Dastjerdi , Soumya K. Ghosh, and Rajkumar Buyya, <A href="http://www.buyya.com/papers/iFogSim.pdf">iFogSim: A Toolkit for Modeling and Simulation of Resource Management Techniques in Internet of Things, Edge and Fog Computing Environments</A>, Software: Practice and Experience (SPE), Volume 47, Issue 9, Pages: 1275-1296, ISSN: 0038-0644, Wiley Press, New York, USA, September 2017.
- * Redowan Mahmud and Rajkumar Buyya, <A href="http://www.buyya.com/papers/iFogSim-Tut.pdf">Modelling and Simulation of Fog and Edge Computing Environments using iFogSim Toolkit</A>, Fog and Edge Computing: Principles and Paradigms, R. Buyya and S. Srirama (eds), 433-466pp, ISBN: 978-111-95-2498-4, Wiley Press, New York, USA, January 2019.
+This simulation models an **IoT system** where multiple devices generate data and send it to cloud/fog nodes.
 
+## 🎯 Goals
+
+* Analyze **data flow**
+* Measure **network load**
+* Evaluate system performance
+
+## ⚙️ Implementation
+
+* Created IoT devices (sensors & actuators)
+* Defined application modules
+* Simulated data transmission between nodes
+
+## 📈 Key Metrics
+
+* Network usage
+* Transmission delay
+* Processing time
+
+---
+
+# ⚡ Task 3 – Edge Computing Simulation
+
+## 📝 Description
+
+This part focuses on **Edge Computing**, where processing is moved closer to the data source instead of relying only on the cloud.
+
+## 🎯 Goals
+
+* Reduce latency
+* Optimize network usage
+* Improve response time
+
+## ⚙️ Implementation
+
+* Distributed modules across edge devices
+* Compared cloud-only vs edge-based execution
+* Used dynamic placement strategies
+
+## 📈 Results
+
+* Reduced latency significantly
+* Lower network traffic
+* Faster response time
+
+---
+
+## 🔄 Comparison (Cloud vs Edge)
+
+| Metric       | Cloud Computing | Edge Computing |
+| ------------ | --------------- | -------------- |
+| Latency      | High            | Low            |
+| Network Load | High            | Reduced        |
+| Performance  | Moderate        | Improved       |
+
+---
+
+## ▶️ How to Run
+
+1. Open the project in IntelliJ IDEA
+2. Navigate to:
+
+  * `IoTSimulation.java` (Task 2)
+  * `EdgeComputingSimulation.java` (Task 3)
+3. Run the main class
+
+---
+
+## 📚 References
+
+* iFogSim2 Toolkit
+* CloudSim Simulator
+
+---
+
+## 👨‍💻 Author
+
+**Abdelhakim Berrim**
+
+---
+
+## ⭐ Notes
+
+This project is part of academic work focused on **Cloud & Edge Computing simulation**.
+
+---
